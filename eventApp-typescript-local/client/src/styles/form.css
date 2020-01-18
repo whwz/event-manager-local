@@ -1,0 +1,66 @@
+form {
+    width: 25rem;
+    height: auto;
+    margin: 100px auto;
+    margin-bottom: 10%;
+    padding: 1rem;
+    background-image: url(https://images.unsplash.com/photo-1516830927954-58378e11dbe5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+    text-align: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  input {
+    width: 20rem;
+    height: 2.5rem;
+    border: none;
+    background: none;
+    border-bottom: 2px solid hsl(39, 77%, 83%);
+    font-family: inherit;
+    margin: 5% auto;
+    padding: 1% 2%;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+  }
+  
+  input[type="date"]:before,
+  input[type="time"]:before {
+    content: attr(placeholder) !important;
+    color: #777777;
+    margin-right: 0.5em;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 9rem;
+    height: 3rem;
+    margin: 5% auto 0;
+    background-color: wheat;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 50%;
+  }
+  
+  .require {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-top: 3%;
+    font-style: italic;
+    color: wheat;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  input[type="submit"]:active {
+    position: relative;
+    top: 1px;
+  }

@@ -1,0 +1,122 @@
+input[type="button"] {
+  display: block;
+  width: 9rem;
+  height: 3rem;
+  margin: 5% auto 0;
+  background-color: wheat;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.events-list {
+  margin: 10% 0;
+}
+
+.container {
+  text-align: center;
+  width: 30rem;
+}
+
+.event {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  flex: 35%;
+  background-image: url(https://images.unsplash.com/photo-1516830927954-58378e11dbe5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: inline-block;
+  height: 150px;
+  color: wheat;
+}
+
+.day {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 15%;
+}
+
+.month-year {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: -5%;
+}
+
+.time {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 5%;
+}
+
+.right {
+  display: inline-block;
+  height: 150px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.content {
+  font-weight: 400;
+  text-align: left;
+  margin-top: -5%;
+  padding-left: 5%;
+  line-height: 200%;
+}
+
+.description {
+  font-size: 0.8rem;
+}
+
+.delete {
+  width: 4%;
+  margin-top: 4%;
+  margin-left: 87%;
+  cursor: pointer;
+}
+
+.left,
+.right,
+.add,
+.form {
+  box-shadow: 7px 9px 18px 0 #000000;
+}
+
+.add:before,
+.right:before {
+  content: "";
+  background: inherit;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.8);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+img.edit {
+  width: 14px;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 109px;
+}
+
+input[type="button"]:active {
+  position: relative;
+  top: 1px;
+}
